@@ -21,6 +21,7 @@ URL: http://pecl.php.net/package/%{pecl_name}
 Source: http://pecl.php.net/get/%{pecl_name}-%{version}.tgz
 
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
+BuildRequires: librabbitmq041-devel
 BuildRequires: %{php_base}-devel, %{php_base}-cli
 BuildRequires:  pear1u
 # explicitly require pear dependencies to avoid conflicts

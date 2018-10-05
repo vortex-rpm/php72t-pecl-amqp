@@ -24,10 +24,10 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildRequires: %{php_base}-devel, %{php_base}-cli
 BuildRequires:  pear1u
 # explicitly require pear dependencies to avoid conflicts
-BuildRequires:  %{php}-cli
-BuildRequires:  %{php}-common
-BuildRequires:  %{php}-process
-BuildRequires:  %{php}-xml
+BuildRequires:  %{php_base}-cli
+BuildRequires:  %{php_base}-common
+BuildRequires:  %{php_base}-process
+BuildRequires:  %{php_base}-xml
 Requires(post): %{__pecl}
 Requires(postun): %{__pecl}
 
